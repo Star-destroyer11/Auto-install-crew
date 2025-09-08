@@ -77,7 +77,8 @@ for pkg in "${packages[@]}"; do
 done
 
 echo "[*] running dev_install as root..."
-
+sudo -i
+sudo dev_install
 sudo bash -c '
 echo "[*] running dev_install"
 dev_install
